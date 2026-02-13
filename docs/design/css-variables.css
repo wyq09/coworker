@@ -1,0 +1,400 @@
+/**
+ * Coworker Liquid Glass Design System
+ * CSS 变量定义
+ * 适用于 Tauri + React 桌面应用
+ */
+
+:root {
+  /* ========================================
+     品牌色 (Brand Colors)
+     ======================================== */
+  --brand-primary: #5E5CE6;        /* Coworker 紫色 */
+  --brand-primary-hover: #6E6CE6;  /* 悬停态 */
+  --brand-primary-active: #4E4CD6; /* 激活态 */
+
+  --brand-secondary: #0A84FF;      /* 强调蓝 */
+  --brand-secondary-hover: #1A94FF;
+
+  --brand-accent: #30D158;         /* 成功绿 */
+  --brand-accent-hover: #40E168;
+
+  /* ========================================
+     语义色 (Semantic Colors)
+     ======================================== */
+  --color-success: #30D158;
+  --color-success-bg: rgba(48, 209, 88, 0.15);
+
+  --color-warning: #FF9F0A;
+  --color-warning-bg: rgba(255, 159, 10, 0.15);
+
+  --color-error: #FF453A;
+  --color-error-bg: rgba(255, 69, 58, 0.15);
+
+  --color-info: #64D2FF;
+  --color-info-bg: rgba(100, 210, 255, 0.15);
+
+  /* ========================================
+     背景色 (Background Colors)
+     ======================================== */
+  --bg-primary: rgba(255, 255, 255, 0.85);
+  --bg-secondary: rgba(242, 242, 247, 0.75);
+  --bg-tertiary: rgba(229, 229, 234, 0.65);
+  --bg-elevated: rgba(255, 255, 255, 0.95);
+  --bg-overlay: rgba(0, 0, 0, 0.4);
+
+  /* ========================================
+     文本色 (Text Colors)
+     ======================================== */
+  --text-primary: rgba(0, 0, 0, 0.85);
+  --text-secondary: rgba(60, 60, 67, 0.70);
+  --text-tertiary: rgba(60, 60, 67, 0.45);
+  --text-placeholder: rgba(60, 60, 67, 0.30);
+  --text-inverse: rgba(255, 255, 255, 0.95);
+
+  /* ========================================
+     边框色 (Border Colors)
+     ======================================== */
+  --border-default: rgba(0, 0, 0, 0.08);
+  --border-light: rgba(0, 0, 0, 0.05);
+  --border-heavy: rgba(0, 0, 0, 0.12);
+  --border-accent: rgba(94, 92, 230, 0.3);
+
+  /* ========================================
+     AI 对话色 (AI Chat Colors)
+     ======================================== */
+  --user-message-bg: #5E5CE6;
+  --user-message-text: #FFFFFF;
+
+  --ai-message-bg: rgba(242, 242, 247, 0.85);
+  --ai-message-text: rgba(0, 0, 0, 0.85);
+
+  --code-bg: rgba(44, 44, 46, 0.95);
+  --code-header: rgba(58, 58, 60, 0.90);
+  --code-text: #FF9F0A;
+
+  /* ========================================
+     间距系统 (Spacing)
+     8px 基础间距系统
+     ======================================== */
+  --spacing-0: 0;
+  --spacing-1: 2px;
+  --spacing-2: 4px;
+  --spacing-3: 6px;
+  --spacing-4: 8px;
+  --spacing-5: 10px;
+  --spacing-6: 12px;
+  --spacing-7: 14px;
+  --spacing-8: 16px;
+  --spacing-10: 20px;
+  --spacing-12: 24px;
+  --spacing-14: 28px;
+  --spacing-16: 32px;
+  --spacing-20: 40px;
+  --spacing-24: 48px;
+  --spacing-28: 56px;
+  --spacing-32: 64px;
+
+  /* 别名 */
+  --spacing-xs: var(--spacing-2);
+  --spacing-sm: var(--spacing-4);
+  --spacing-md: var(--spacing-8);
+  --spacing-lg: var(--spacing-12);
+  --spacing-xl: var(--spacing-16);
+  --spacing-2xl: var(--spacing-24);
+
+  /* ========================================
+     圆角 (Border Radius)
+     ======================================== */
+  --radius-none: 0;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 14px;
+  --radius-2xl: 16px;
+  --radius-3xl: 20px;
+  --radius-full: 9999px;
+
+  /* ========================================
+     阴影 (Shadows)
+     ======================================== */
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.15);
+  --shadow-2xl: 0 20px 64px rgba(0, 0, 0, 0.18);
+
+  /* 内阴影 */
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.5),
+                    inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+  --shadow-inset-md: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+
+  /* ========================================
+     字体 (Typography)
+     ======================================== */
+  --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                 "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial,
+                 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+
+  --font-family-mono: "SF Mono", "Menlo", "Monaco", "Courier New", monospace;
+
+  /* 字号 */
+  --font-size-xs: 10px;
+  --font-size-sm: 11px;
+  --font-size-base: 13px;
+  --font-size-md: 14px;
+  --font-size-lg: 15px;
+  --font-size-xl: 17px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 22px;
+  --font-size-4xl: 28px;
+  --font-size-5xl: 34px;
+
+  /* 字重 */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* 行高 */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.6;
+
+  /* ========================================
+     动画 (Animation)
+     ======================================== */
+  --duration-instant: 100ms;
+  --duration-fast: 200ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* ========================================
+     毛玻璃效果 (Liquid Glass)
+     ======================================== */
+  --glass-blur-light: 20px;
+  --glass-blur-medium: 40px;
+  --glass-blur-strong: 60px;
+  --glass-blur-heavy: 80px;
+
+  --glass-saturate-light: 150%;
+  --glass-saturate-medium: 180%;
+  --glass-saturate-strong: 200%;
+
+  --glass-opacity-light: 0.65;
+  --glass-opacity-medium: 0.75;
+  --glass-opacity-strong: 0.85;
+  --glass-opacity-heavy: 0.90;
+
+  /* ========================================
+     Z-Index 分层
+     ======================================== */
+  --z-index-dropdown: 100;
+  --z-index-sticky: 200;
+  --z-index-fixed: 300;
+  --z-index-modal-backdrop: 400;
+  --z-index-modal: 500;
+  --z-index-popover: 600;
+  --z-index-tooltip: 700;
+  --z-index-toast: 800;
+}
+
+/* ========================================
+   暗色模式 (Dark Mode)
+   ======================================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* 品牌色 - 暗色模式 */
+    --brand-primary: #747AFF;
+    --brand-primary-hover: #848AFF;
+    --brand-primary-active: #646AE6;
+
+    --brand-secondary: #409CFF;
+    --brand-accent: #32D74B;
+
+    /* 语义色 - 暗色模式 */
+    --color-success: #32D74B;
+    --color-warning: #FFD60A;
+    --color-error: #FF6961;
+    --color-info: #6AC0FF;
+
+    /* 背景色 - 暗色模式 */
+    --bg-primary: rgba(30, 30, 30, 0.85);
+    --bg-secondary: rgba(44, 44, 46, 0.75);
+    --bg-tertiary: rgba(58, 58, 60, 0.65);
+    --bg-elevated: rgba(44, 44, 46, 0.95);
+    --bg-overlay: rgba(0, 0, 0, 0.6);
+
+    /* 文本色 - 暗色模式 */
+    --text-primary: rgba(255, 255, 255, 0.90);
+    --text-secondary: rgba(235, 235, 245, 0.60);
+    --text-tertiary: rgba(235, 235, 245, 0.40);
+    --text-placeholder: rgba(235, 235, 245, 0.25);
+
+    /* 边框色 - 暗色模式 */
+    --border-default: rgba(255, 255, 255, 0.1);
+    --border-light: rgba(255, 255, 255, 0.05);
+    --border-heavy: rgba(255, 255, 255, 0.15);
+    --border-accent: rgba(116, 122, 255, 0.3);
+
+    /* AI 对话色 - 暗色模式 */
+    --ai-message-bg: rgba(44, 44, 46, 0.85);
+    --ai-message-text: rgba(255, 255, 255, 0.90);
+  }
+}
+
+/* ========================================
+   毛玻璃基础类
+   ======================================== */
+.liquid-glass {
+  background: rgba(255, 255, 255, var(--glass-opacity-medium));
+  backdrop-filter: blur(var(--glass-blur-medium)) saturate(var(--glass-saturate-medium));
+  -webkit-backdrop-filter: blur(var(--glass-blur-medium)) saturate(var(--glass-saturate-medium));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.liquid-glass-light {
+  background: rgba(255, 255, 255, var(--glass-opacity-light));
+  backdrop-filter: blur(var(--glass-blur-light)) saturate(var(--glass-saturate-light));
+  -webkit-backdrop-filter: blur(var(--glass-blur-light)) saturate(var(--glass-saturate-light));
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.liquid-glass-strong {
+  background: rgba(255, 255, 255, var(--glass-opacity-strong));
+  backdrop-filter: blur(var(--glass-blur-strong)) saturate(var(--glass-saturate-strong));
+  -webkit-backdrop-filter: blur(var(--glass-blur-strong)) saturate(var(--glass-saturate-strong));
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.liquid-glass-heavy {
+  background: rgba(255, 255, 255, var(--glass-opacity-heavy));
+  backdrop-filter: blur(var(--glass-blur-heavy)) saturate(var(--glass-saturate-strong));
+  -webkit-backdrop-filter: blur(var(--glass-blur-heavy)) saturate(var(--glass-saturate-strong));
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* 无 backdrop-filter 支持时的降级 */
+@supports not (backdrop-filter: blur(1px)) {
+  .liquid-glass {
+    background: rgba(255, 255, 255, 0.95);
+  }
+  .liquid-glass-light {
+    background: rgba(255, 255, 255, 0.85);
+  }
+  .liquid-glass-strong {
+    background: rgba(255, 255, 255, 0.98);
+  }
+  .liquid-glass-heavy {
+    background: rgba(255, 255, 255, 1);
+  }
+}
+
+/* ========================================
+   暗色模式毛玻璃
+   ======================================== */
+@media (prefers-color-scheme: dark) {
+  .liquid-glass {
+    background: rgba(30, 30, 30, var(--glass-opacity-medium));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .liquid-glass-light {
+    background: rgba(30, 30, 30, var(--glass-opacity-light));
+  }
+  .liquid-glass-strong {
+    background: rgba(30, 30, 30, var(--glass-opacity-strong));
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .liquid-glass-heavy {
+    background: rgba(30, 30, 30, var(--glass-opacity-heavy));
+  }
+
+  @supports not (backdrop-filter: blur(1px)) {
+    .liquid-glass {
+      background: rgba(30, 30, 30, 0.95);
+    }
+    .liquid-glass-light {
+      background: rgba(30, 30, 30, 0.85);
+    }
+    .liquid-glass-strong {
+      background: rgba(30, 30, 30, 0.98);
+    }
+    .liquid-glass-heavy {
+      background: rgba(30, 30, 30, 1);
+    }
+  }
+}
+
+/* ========================================
+   工具类 (Utility Classes)
+   ======================================== */
+
+/* 间距 */
+.p-0 { padding: var(--spacing-0); }
+.p-1 { padding: var(--spacing-1); }
+.p-2 { padding: var(--spacing-2); }
+.p-3 { padding: var(--spacing-3); }
+.p-4 { padding: var(--spacing-4); }
+.p-6 { padding: var(--spacing-6); }
+.p-8 { padding: var(--spacing-8); }
+
+.px-4 { padding-left: var(--spacing-4); padding-right: var(--spacing-4); }
+.py-4 { padding-top: var(--spacing-4); padding-bottom: var(--spacing-4); }
+
+.m-0 { margin: var(--spacing-0); }
+.m-1 { margin: var(--spacing-1); }
+.m-2 { margin: var(--spacing-2); }
+.m-4 { margin: var(--spacing-4); }
+.m-auto { margin: auto; }
+
+/* 文本 */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-tertiary { color: var(--text-tertiary); }
+.text-brand { color: var(--brand-primary); }
+
+.font-medium { font-weight: var(--font-weight-medium); }
+.font-semibold { font-weight: var(--font-weight-semibold); }
+.font-bold { font-weight: var(--font-weight-bold); }
+
+/* 显示 */
+.hidden { display: none; }
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.grid { display: grid; }
+
+/* Flex 对齐 */
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.flex-col { flex-direction: column; }
+.gap-2 { gap: var(--spacing-2); }
+.gap-4 { gap: var(--spacing-4); }
+
+/* 尺寸 */
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+
+/* 过渡 */
+.transition { transition: all var(--duration-fast) var(--ease-out); }
+.transition-colors { transition: color var(--duration-fast) var(--ease-out),
+                              background-color var(--duration-fast) var(--ease-out); }
+
+/* 减弱动画 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
