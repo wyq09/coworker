@@ -2,6 +2,7 @@ import { describe, it, expect, vi } from 'vitest';
 import { render, screen, waitFor } from './utils/render';
 import userEvent from '@testing-library/user-event';
 import { invoke } from '@tauri-apps/api/core';
+import React from 'react';
 
 /**
  * 示例测试文件
@@ -89,6 +90,3 @@ describe('React 组件测试示例', () => {
     });
   });
 });
-
-// 导入 React 类型
-import React;
